@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import type { ReceivedKaraoke } from "@/types";
 // import { YouTubePlayer } from "@/components/MoviePlayer/MoviePlayer";
 import { Layout } from "@/components/Layout";
 import { TopPageNotice } from "@/features/DescriptionNotice";
-import { ExtractVideoId } from "@/util";
+// import { ExtractVideoId } from "@/util";
 import Image from "next/image";
 import BaseTable from "@/components/Table";
 
@@ -13,12 +13,13 @@ const pageName = "Top";
 const TopPage = () => {
   const karoakes: ReceivedKaraoke[] = [];
 
-  const [start, setStart] = useState<number>(36 * 60 + 41);
-  const [currentMovieId, setCurrentMovieId] = useState<string>("E7x2TZ1_Ys4");
+  // const [start, setStart] = useState<number>(36 * 60 + 41);
+  // const [currentMovieId, setCurrentMovieId] = useState<string>("E7x2TZ1_Ys4");
 
   const handleMovieClickYouTube = (url: string, start: number) => {
-    setCurrentMovieId(ExtractVideoId(url));
-    setStart(start);
+    // setCurrentMovieId(ExtractVideoId(url));
+    // setStart(start);
+    console.log(url, start);
   };
 
   return (

@@ -1,7 +1,6 @@
+import { getWindowSize } from "@/features/Layout";
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
-
-import { getWindowSize } from "@/features/Layout";
 
 export const YouTubePlayer = ({
   videoId,
