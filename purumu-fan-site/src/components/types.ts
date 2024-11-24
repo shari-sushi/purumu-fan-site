@@ -1,15 +1,15 @@
-import { Table } from "@tanstack/react-table";
+// import { Table } from "@tanstack/react-table";
 import { ReceivedKaraoke } from "@/types";
 
-export type KaraokeTablePagenationButtonsProps = {
-  table: Table<ReceivedKaraoke>;
-  maxPageSize: number;
-};
+// export type KaraokeTablePagenationButtonsProps = {
+//   table: Table<ReceivedKaraoke>;
+//   maxPageSize: number;
+// };
 
-export type KaraokeTablefilterInputProps = {
-  table: Table<ReceivedKaraoke>;
-  accesKey?: string;
-};
+// export type KaraokeTablefilterInputProps = {
+//   table: Table<ReceivedKaraoke>;
+//   accesKey?: string;
+// };
 
 export type FavoriteColumn = {
   count: number;
